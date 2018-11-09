@@ -1,5 +1,25 @@
 ## [Guide] HP Envy Haswell series J/K/Q/N using Clover UEFI
 
+Original post url: https://www.tonymacx86.com/threads/guide-hp-envy-haswell-series-j-k-q-n-using-clover-uefi.261724/
+
+### Content
+  - [Overview](#overview)
+  - [What you need](#what-you-need)
+  - [BIOS settings](#bios-settings)
+  - [Preparing USB and initial Installation](#preparing-usb-and-initial-installation)
+  - [Post Installation](#post-installation)
+  - [Power Management](#power-management)
+  - [Final config.plist](#final-configplist)
+  - [Updates to the patch repositories](#updates-to-the-patch-repositories)
+  - [What works](#what-works)
+  - [Known Problems](#known-problems)
+  - [Other post-install tasks](#other-post-install-tasks)
+  - [Keyboard Mapping](#keyboard-mapping)
+  - [System updates](#system-updates)
+  - [Updating to High Sierra](#updating-to-high-sierra)
+  - [Problem reporting](#problem-reporting)
+
+
 
 ### Overview
 
@@ -138,7 +158,7 @@ Always check your hibernatemode after updates and disable it. System updates ten
 Up to now, you've been using the same config.plist we were using for installation. After all the APCI files are in place (previous two steps), you're ready to use the final config.plist from the Envy repo.
 
 First, mount the EFI partition:
-<br />
+
 ```
 cd ~/Projects/envy.git
 ./mount_efi.sh
