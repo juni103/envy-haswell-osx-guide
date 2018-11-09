@@ -1,4 +1,6 @@
-Overview
+#[Guide] HP Envy Haswell series J/K/Q/N using Clover UEFI
+
+##Overview
 
 The purpose of this guide is to provide a step-by-step guide to installing Mojave, High Sierra, Sierra, El Capitan, or Yosemite on the HP Envy J/K/Q/N series Haswell laptops. I no longer have the laptop, but original work was done when I had an HP Envy 15-J063CL.
 
@@ -15,7 +17,7 @@ RTL8111/8168/8411
 Some early background/development is here: http://www.tonymacx86.com/mavericks...-locked-msrs-hp-envy-15-j063cl-i7-4700mq.html
 
 
-What you need
+##What you need
 
 - Haswell HP Envy J-series (now confirmed to work for K-series as well, Q-series too, N-series beta)
 - macOS or OS X downloaded from the Mac App Store
@@ -24,7 +26,7 @@ What you need
 - Broadcom BCM94352(HMB) for native WiFi
 
 
-BIOS settings
+##BIOS settings
 
 To start, set BIOS to Windows 8 defaults.
 
@@ -38,7 +40,7 @@ If you own the laptop, please help with any additional required BIOS settings th
 Note: The DSDT/SSDT patching script will automatically disable the discrete nVidia card if you have it enabled in BIOS. It is best, therefore to keep it enabled in BIOS so you can still use it on Windows, but have DSDT/SSDT patched properly for OS X.
 
 
-Preparing USB and initial Installation
+##Preparing USB and initial Installation
 
 Prior to installing OS X, it is a good idea to create an OEM recovery USB from Windows. If anything goes wrong and you want/need to get back to Windows, you can restore it via the USB. Use the utility provided by HP to accomplish this.
 
